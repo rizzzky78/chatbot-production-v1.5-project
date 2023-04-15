@@ -1,0 +1,18 @@
+{
+    "wait": "Please wait...",
+    "message": {
+        "limit_run_out": "Your limit has run out.",
+        "owner_only": "Sorry, this command only for owner.",
+        "premium_only": "Sorry, this command only for premium user.",
+        "private_only": "Sorry, this command only for private chat.",
+        "group_only": "Sorry, this command only for group.",
+        "admin_only": "Sorry, this command only for admin group.",
+        "cooldown": "Cooldown, please waiting {{cooldown}} seconds again."
+    },
+    "command": {
+        "not_found": "Command {{command}} not found."
+    },
+    "sticker": {
+        "no_media": "Please reply an image or video with this command."
+    }
+}

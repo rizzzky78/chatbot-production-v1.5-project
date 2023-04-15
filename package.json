@@ -1,0 +1,46 @@
+{
+  "name": "CHatbot Marketplace",
+  "version": "1.0",
+  "description": "Software as Services (SaS)",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "pm2 start index.js --cron \"* */5 * * *\" && pm2 logs",
+    "pm2": "pm2 start index.js && pm2 logs",
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "Rizzzky",
+  "license": "ISC",
+  "dependencies": {
+    "@adiwajshing/baileys": "^4.4.0",
+    "@adiwajshing/keyed-db": "^0.2.4",
+    "axios": "^0.27.2",
+    "chalk": "^4.1.2",
+    "crypto-random-string": "^2.0.0",
+    "dotenv": "^16.0.1",
+    "form-data": "^4.0.0",
+    "glob": "^8.0.3",
+    "i18n": "^0.15.1",
+    "jspdf": "^2.4.0",
+    "jspdf-autotable": "^3.5.28",
+    "link-preview-js": "^2.1.19",
+    "lz-string": "^1.5.0",
+    "module-alias": "^2.2.2",
+    "moment-timezone": "^0.5.34",
+    "mongodb": "^5.0.1",
+    "node-cron": "^3.0.1",
+    "openai": "^3.2.1",
+    "pino": "^8.1.0",
+    "qrcode-terminal": "^0.12.0",
+    "rimraf": "^3.0.2",
+    "winston": "^3.8.2"
+  },
+  "_moduleAliases": {
+    "@libs": "libs",
+    "@store": "store/index.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
